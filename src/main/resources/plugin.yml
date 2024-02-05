@@ -1,0 +1,9 @@
+name: ElitRankUp
+Author: PnterNN
+version: 1.0.0
+main: mc.pnternn.elitrankup.ElitRankUp
+api-version: 1.13
+depend: [PlaceholderAPI]
+commands:
+  rank:
+  rankup:

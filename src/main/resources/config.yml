@@ -1,0 +1,39 @@
+Messages:
+  yetersiz-para: "&6&l[&c&lElitRankUp&6&l] &cRütbe atlamak için yeterli paran yok!"
+  son-seviyedesin: "&6&l[&c&lElitRankUp&6&l] &cSon seviyedesin! Daha yüksek bir rütbe yok."
+  seviye-atladin: "&6&l[&c&lElitRankUp&6&l] &aBaşarıyla %rank% rütbesine yükseldin."
+  eksik-gereklilik: "&6&l[&c&lElitRankUp&6&l] &cGerekliliklerin hepsini karşılamıyorsun! %name% verisinin %value% olması gerekiyor."
+  bir-hata-olustu: "&6&l[&c&lElitRankUp&6&l] &cRütbe atlama sırasında bir hata oluşttu! Lütfen yetkiliyle iletişime geçin."
+  yetkin-yok: "&6&l[&c&lElitRankUp&6&l] &cBu rütbeye atlamak için yetkin yok."
+mysql:
+  host: "localhost"
+  database: "minecraft"
+  port: 3306
+  username: "root"
+  password: ""
+  table: "_elitrankup"
+Ranks:
+  1:
+    name: SkyWinner
+    perm: ''
+    requirements:
+      1:
+        name: "para"
+        type: 'placeholder'
+        placeholder: '%vault_eco_balance%'
+        value: '100'
+      2:
+        name: "rütbe"
+        type: 'placeholder'
+        placeholder: '%vault_rank%'
+        value: 'default'
+      3:
+        name: "ada seviyesi"
+        type: 'placeholder'
+        placeholder: '%fabledskyblock_island_level%'
+        value: '1000'
+    take:
+      money: 10000
+    prizes:
+      - 'give %player% diamond 64'
+      - 'manuadd %player% SkyWinner'
